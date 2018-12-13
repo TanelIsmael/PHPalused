@@ -13,7 +13,17 @@ $string = "kolm";
 $toevaartus = true;
 $toevaartus = false;
 
-echo 'taisarv ' . $taisarv . ' väärtus';
+echo 'taisarv ' . $taisarv . ' väärtus<br>';
+echo 'reaalarv ' . $reaalarv . ' väärtus<br>';
+echo 'string ' . $string . ' väärtus<br>';
+echo 'toevaartus true ' . $toevaartus . ' väärtus<br>';
+echo 'toevaartus false ' . $toevaartus . ' väärtus';
+echo '<hr>';
+echo gettype($string) . '<br>';
+echo gettype($toevaartus);
+$summa = $string + $string;
+echo gettype($summa) . '<br>';
+echo 'Summa = ' . $summa . '';
 
 
 ?>
