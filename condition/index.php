@@ -28,11 +28,22 @@ if ($arv >= 0 and $arv < 25) {
     echo '<div style="color: black">' . $arv . '</div>';
 }
 
+?>
+
+    <style>
+
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border: solid 1px black;
+        }
+    </style>
+
+<?php
 echo '<h5>Ülesanne 3</h5>';
-$aktiivne = 'roheline';
-
+$aktiivne = 'punane';
 switch ($aktiivne) {
-
     case 'punane':
         echo '<div style="background: red"></div>';
         echo '<div></div>';
