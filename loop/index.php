@@ -56,7 +56,7 @@ echo '</table>';
     }
 
     th {
-        background-color: red;
+        background-color: deepskyblue;
     }
 </style>
 
@@ -85,6 +85,27 @@ for ($arv1 = 1; $arv1 <= 10; $arv1++) {
     echo '</tr>';
 }
 echo '</table>';
+
+
+?>
+
+
+<?php
+
+echo '<h5>Ülesanne 4</h5>';
+$arv = 1234;
+$summa = 0;
+while ($arv != 0) {
+    $number = $arv % 10;
+    echo 'number = ' . $number . '<br>';
+    $arv = $arv / 10;
+    echo 'arv float = ' . $arv . '<br>';
+    settype($arv, 'int');
+    echo 'Arv in = ' . $arv . '<br>';
+    $summa += $number;
+    echo '<hr>';
+}
+echo 'Lõplik summa = ' . $summa . '<br>';
 
 
 ?>
