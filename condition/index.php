@@ -28,6 +28,31 @@ if ($arv >= 0 and $arv < 25) {
     echo '<div style="color: black">' . $arv . '</div>';
 }
 
+
+// tingimuslaused
+
+/*
+
+ * switch (kontroll){
+
+ *      case vastus:
+
+ *          tegevused, mis antud case puhul toimivad
+
+ *          break;
+
+ *      default:
+
+ *          tegevused, mis toimuvad siis kui kõik muu
+
+ *          ei sobi
+
+ *          break
+
+ * }
+
+ * */
+
 ?>
 
     <style>
@@ -42,7 +67,7 @@ if ($arv >= 0 and $arv < 25) {
 
 <?php
 echo '<h5>Ülesanne 3</h5>';
-$aktiivne = 'punane';
+$aktiivne = 'kollane';
 switch ($aktiivne) {
     case 'punane':
         echo '<div style="background: red"></div>';
