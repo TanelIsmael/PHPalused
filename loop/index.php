@@ -109,3 +109,23 @@ echo 'Lõplik summa = ' . $summa . '<br>';
 
 
 ?>
+
+<?php
+
+echo '<h5>Ülesanne 5</h5>';
+$arv = 48557812535;
+$kordamine = 0;
+while ($arv != 0) {
+    $number = $arv % 10;
+    echo 'number = ' . $number . '<br>';
+    $arv = $arv / 10;
+    echo 'arv float = ' . $arv . '<br>';
+    settype($arv, 'int');
+    echo 'Arv int = ' . $arv . '<br>';
+    if ($number == 5) $kordamine++;
+    echo '<hr>';
+}
+echo 'number 5 esineb = ' . $kordamine . '<br>';
+
+
+?>
