@@ -21,9 +21,28 @@ echo 'toevaartus false ' . $toevaartus . ' väärtus';
 echo '<hr>';
 echo gettype($string) . '<br>';
 echo gettype($toevaartus);
-$summa = $string + $string;
+$summa = $string . $string;
 echo gettype($summa) . '<br>';
 echo 'Summa = ' . $summa . '';
+
+$arv1 = 42;
+$arv2 = 11;
+
+echo '<h4>Matemaatilised operaatorid</h4>';
+echo $arv1 . ' + ' . $arv2 . ' = ' . ($arv1 + $arv2) . '<br>';
+echo $arv1 . ' - ' . $arv2 . ' = ' . ($arv1 - $arv2) . '<br>';
+echo $arv1 . ' * ' . $arv2 . ' = ' . ($arv1 * $arv2) . '<br>';
+echo $arv1 . ' / ' . $arv2 . ' = ' . ($arv1 / $arv2) . '<br>';
+echo $arv1 . ' % ' . $arv2 . ' = ' . ($arv1 % $arv2) . '<br>';
+
+echo '<h4>Võrdlus operaatorid</h4>';
+echo $arv1 . ' == ' . $arv2 . ' see on ' . ($arv1 == $arv2) . '<br>';
+echo $arv1 . ' != ' . $arv2 . ' see on ' . ($arv1 != $arv2) . '<br>';
+echo $arv1 . ' < ' . $arv2 . ' see on ' . ($arv1 < $arv2) . '<br>';
+echo $arv1 . ' > ' . $arv2 . ' see on ' . ($arv1 > $arv2) . '<br>';
+echo $arv1 . ' <= ' . $arv2 . ' see on ' . ($arv1 <= $arv2) . '<br>';
+echo $arv1 . ' >= ' . $arv2 . ' see on ' . ($arv1 >= $arv2) . '<br>';
+
 
 
 ?>
