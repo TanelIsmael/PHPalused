@@ -28,4 +28,31 @@ if ($arv >= 0 and $arv < 25) {
     echo '<div style="color: black">' . $arv . '</div>';
 }
 
+echo '<h5>Ülesanne 3</h5>';
+$aktiivne = 'roheline';
+
+switch ($aktiivne) {
+
+    case 'punane':
+        echo '<div style="background: red"></div>';
+        echo '<div></div>';
+        echo '<div></div>';
+        break;
+    case 'kollane':
+        echo '<div></div>';
+        echo '<div style="background: orange"></div>';
+        echo '<div></div>';
+        break;
+    case 'roheline':
+        echo '<div></div>';
+        echo '<div></div>';
+        echo '<div style="background: green"></div>';
+        break;
+    default:
+        echo '<div style="background: black"></div>';
+        echo '<div style="background: black"></div>';
+        echo '<div style="background: black"></div>';
+        break;
+}
+
 ?>
