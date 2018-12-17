@@ -50,6 +50,58 @@ $function_holder();
 
 
 echo '<h5>Näide 6</h5>';
+function test()
+{
+    $testvariable = 'this is a test variable';
+}
+
+echo 'test variable: ' . $testvariable . '<br>';
+
+echo '<h5>Näide 7</h5>';
+$life = 42;
+function meaningOfLife()
+{
+    echo 'The meaning of life is ' . $life . '<br>';
+}
+
+meaningOfLife();
+
+echo '<h5>Näide 7 variant b</h5>';
+$life = 42;
+function meaningLife()
+{
+    global $life;
+    echo 'The meaning of life is ' . $life . '<br>';
+}
+
+meaningLife();
+
+echo '<h5>Näide 8</h5>';
+$num_of_calls = 0;
+function andAnotherThing($txt)
+{
+    global $num_of_calls;
+    $num_of_calls++;
+    echo '<h1>' . $num_of_calls . '. ' . $txt . '</h1>';
+}
+
+andAnotherThing('Widgets');
+echo 'We build a fine range of widgets';
+andAnotherThing('Doodads');
+echo 'Finest in the world';
+andAnotherThing('Makaronid');
+echo 'söön makarone';
+
+
+echo '<h5>Näide 9</h5>';
+
+
+
+
+
+
+
+
 
 
 ?>
