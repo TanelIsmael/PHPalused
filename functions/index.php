@@ -94,6 +94,40 @@ echo 'söön makarone';
 
 
 echo '<h5>Näide 9</h5>';
+function anotherThing($txt)
+{
+    static $num_of_calls = 0;
+    $num_of_calls++;
+    echo '<h1>' . $num_of_calls . '. ' . $txt . '</h1>';
+}
+
+anotherThing('Widgets');
+echo 'We build a fine range of widgets';
+anotherThing('Doodads');
+echo 'Finest in the world';
+
+echo '<h5>Näide 10</h5>';
+function fontWrap($txt, $size)
+{ /*on võimalik sizeile määrata ka väärtust $size=3 näiteks ja kui hiljem ei ole size
+    argumenti määratud siis kasutatakse default väärtust*/
+    echo '<font size=' . $size . ' face=\'helvetica,arial,sans-serif\'>' . $txt . '</font>';
+}
+
+fontWrap('A heading<br>', 5);
+fontWrap('a subheading<br>', 4);
+fontWrap('some text and some more text<br>', 3);
+fontWrap('some other text<br>', 3);
+
+
+echo '<h5>Näide 11</h5>';
+function addFive(&$num)
+{
+    $num += 5;
+}
+
+$orignum = 10;
+addFive($orignum);
+echo $orignum;
 
 
 
