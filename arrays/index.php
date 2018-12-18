@@ -51,12 +51,14 @@ $kasutajad = array(
     array(
         'Pets',
         'Guits',
-        'Ants'
+        'Ants',
+        'female'
     ),
     array(
         'Pets',
         'Guits',
-        'Ants'
+        'Ants',
+        'male'
     )
 
 );
@@ -68,10 +70,19 @@ echo '</pre>';*/
 
 echo '<br>';
 foreach ($kasutajad as $kasutaja) {
-    foreach ($kasutaja as $element) {
-        echo $element . '<br>';
+    for ($i = 0; $i < count($kasutaja); $i++) {
+        if ($kasutaja[3] == female) {
+            echo '<div style="color: deeppink">';
+        } else {
+            echo '<div style="color: lightskyblue">';
+        }
+        echo $kasutaja[$i] . '</div>';
     }
-    echo '<hr>';
+
+    /*foreach ($kasutaja as $element) {
+        echo '<div>'.$element.'</div>'; ilma värvita, ülemise puhul female on pink ja male on blue
+    }
+    echo '<hr>';*/
 }
 
 
