@@ -129,6 +129,35 @@ $orignum = 10;
 addFive($orignum);
 echo $orignum;
 
+?>
+    <style>
+        table, tr, td {
+            border: solid 1px deeppink;
+            background-color: black;
+            color: white;
+        }
+    </style>
+<?php
+
+echo '<h5>Ülesanne 1</h5>';
+function table($txt1, $txt2, $txt3, $txt4)
+{
+    echo '<table>';
+    for ($tr = 1; $tr <= 4; $tr++) {
+        echo '<tr>';
+        for ($td = 1; $td <= 4; $td++) {
+            echo '<td>';
+            echo ${'txt' . $tr};
+            echo '</td>';
+        }
+        echo '</tr>';
+    }
+}
+
+echo '</table>';
+
+table(see, on, mingi, tabel)
+
 
 
 
