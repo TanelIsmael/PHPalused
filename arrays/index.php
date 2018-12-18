@@ -61,10 +61,18 @@ $kasutajad = array(
 
 );
 
-echo '<br>';
+/*echo '<br>';
 echo '<pre>';
 print_r($kasutajad);
-echo '</pre>';
+echo '</pre>';*/
+
+echo '<br>';
+foreach ($kasutajad as $kasutaja) {
+    foreach ($kasutaja as $element) {
+        echo $element . '<br>';
+    }
+    echo '<hr>';
+}
 
 
 ?>
