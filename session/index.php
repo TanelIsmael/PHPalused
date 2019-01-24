@@ -6,7 +6,11 @@
  * Time: 14:17
  */
 
+session_start();
 require_once 'fnc.php';
-
-$loginFrom = htmlFromFile('login');
-echo $loginFrom;
+if (isset($_SESSION['user'])) {
+    echo 'Tere tulemast, ' . $_SESSION['user']['last_name'] . '!<br>';
+} else {
+    $loginFrom = htmlFromFile('login');
+    echo $loginFrom;
+}
