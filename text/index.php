@@ -88,3 +88,36 @@ while ($leia_tekstist = strpos($tekst, $otsitav, $nihe)) {    //4 10 13 48
     echo $leia_tekstist . '<br>';
     $nihe = $leia_tekstist + strlen($otsitav);
 }
+
+echo '<br>';
+
+
+$tekst = 'Pai papa, pane paadile punased purjed peale';
+$asendus = 'emme';
+$otsitav_algus = 4;
+$otsitav_pikkus = 4;
+echo substr_replace($tekst, $asendus, $otsitav_algus, $otsitav_pikkus);
+
+echo '<br>';
+
+$tekst = 'Pai papa, pane paadile punased purjed peale';
+$asendus = 'emme';
+$otsitav = 'papa';
+$nihe = 0;
+$asenduse_algus = strpos($tekst, $otsitav, $nihe);
+$asenduse_markide_arv = strlen($otsitav);
+echo substr_replace($tekst, $asendus, $asenduse_algus, $asenduse_markide_arv);
+
+echo '<br>';
+
+$tekst = 'Musta lehma saba musta lehma taga, valge lehma saba valge lehma taga';
+$otsi = 'lehm';
+$asenda = 'koer';
+echo str_replace($otsi, $asenda, $tekst);
+
+echo '<br>';
+
+$tekst = 'Musta lehma saba musta lehma taga, valge lehma saba valge lehma taga';
+$otsi = array('lehm', 'saba', 'taga');
+$asenda = array('koer', 'sarv', 'ees');
+echo str_replace($otsi, $asenda, $tekst);
