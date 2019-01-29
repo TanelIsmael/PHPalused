@@ -8,3 +8,10 @@
 
 
 echo time(); //aeg
+echo '<br>';
+echo date('d.m.Y G:i', time());
+//d – kuupäev 01-31
+//m – kuu numbrina 01-12
+//Y – neljakohaline aastaarv n: 2013
+//G – 24-tunnine tunniformaat 0-23
+//i –  minutid 0-59
