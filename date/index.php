@@ -78,6 +78,24 @@ echo '<br>';
 echo strtotime("4pm yesterday");
 echo '<br>';
 echo strtotime("6am 10 days ago");
+
 echo '<br>';
+
+
+if (checkdate(12, 32, 2013)) {
+    echo('Kuupäev korras!');
+} else {
+    echo('Kuupäev on valesti sisestatud');
+}
+
+echo '<br>';
+
+if (checkdate(12, 29, 2013)) {
+    echo('Kuupäev korras!');
+} else {
+    echo('Kuupäev on valesti sisestatud');
+}
+
+
 
 
