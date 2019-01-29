@@ -25,4 +25,7 @@ $kuu = $eesti_kuud[date('n')];
 $aasta = date('Y');
 //kuupäeva väljastamine
 echo $paev . '.' . $kuu . ' ' . $aasta;    //22.veebruar2013
-
+echo '<br>';
+mktime(tunnid, minutid, sekundid, kuu, päev, aasta, suveaeg);
+$sp = mktime(0, 0, 0, 04, 22, 1993);
+echo date('d.m.Y', $sp);	
