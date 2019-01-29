@@ -16,4 +16,13 @@ echo date('d.m.Y G:i', time());
 //Y – neljakohaline aastaarv n: 2013
 //G – 24-tunnine tunniformaat 0-23
 //i –  minutid 0-59
+echo '<br>';
+//kuude massiiv
+$eesti_kuud = array(1 => 'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember');
+//kuupäevad massiividesse
+$paev = date('d');
+$kuu = $eesti_kuud[date('n')];
+$aasta = date('Y');
+//kuupäeva väljastamine
+echo $paev . '.' . $kuu . ' ' . $aasta;    //22.veebruar2013
 
