@@ -19,7 +19,7 @@ $toode3 = $_GET['t3'];
 
 echo 'Toode 1: ' . $toode1 . 'tk<br>';
 
-echo 'Toode 22: ' . $toode2 . 'tk<br>';
+echo 'Toode 2: ' . $toode2 . 'tk<br>';
 
 echo 'Toode 3: ' . $toode3 . 'tk<br>';
 
